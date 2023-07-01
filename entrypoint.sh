@@ -12,8 +12,7 @@ TARGET_DIR=${TARGET_DIR:-.}
 cd "$TARGET_DIR"
 
 if [ "${DO_PIP_INSTALL:-true}" = "true" ]; then
-    pip install --upgrade pip
-    eval "${PIP_INSTALL_CMD:-python3 -m venv myenv && source myenv/bin/activate && pip install -e . }"
+    eval "${PIP_INSTALL_CMD:-pip install -e . }"
 fi
 
 IGNORE_PKGS_ARGS=("--ignore-packages" "pip-licenses" "pipdeptree")
@@ -33,6 +32,6 @@ fi
 pip install pip-licenses
 
 set -x
-pip-licenses ${*:---summary --with-urls "${IGNORE_PKGS_ARGS[@]}" } | tee "$ALL_OUTPUT_FILE"
+pip-licenses ${*:---format csv --with-urls "${IGNORE_PKGS_ARGS[@]}" } | tee "$ALL_OUTPUT_FILE"
 pip-licenses ${*:---format csv --with-urls --allow-only "$ALLOWED_LICENSES" "${IGNORE_PKGS_ARGS[@]}" }
 set +x
