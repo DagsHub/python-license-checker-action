@@ -25,11 +25,8 @@ fi
 ALL_OUTPUT_FILE="${ALL_OUTPUT_FILE:-licenses.csv}"
 
 if [ "${RUN_PIPDEPTREE:-true}" = "true" ]; then
-    pip install pipdeptree
     pipdeptree
 fi
-
-pip install pip-licenses
 
 set -x
 pip-licenses ${*:---format csv --with-urls "${IGNORE_PKGS_ARGS[@]}" } | tee "$ALL_OUTPUT_FILE"
