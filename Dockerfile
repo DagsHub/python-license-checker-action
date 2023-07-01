@@ -1,4 +1,3 @@
-# TODO: Node alpine
 FROM python:3.11
 
 RUN pip install pip-licenses==4.3.2
