@@ -12,6 +12,7 @@ TARGET_DIR=${TARGET_DIR:-.}
 cd "$TARGET_DIR"
 
 if [ "${DO_PIP_INSTALL:-true}" = "true" ]; then
+    pip install --upgrade pip
     eval "${PIP_INSTALL_CMD:-python3 -m venv myenv && source myenv/bin/activate && pip install -e . }"
 fi
 
