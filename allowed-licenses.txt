@@ -3,7 +3,7 @@ Apache Software License
 Apache Software License; BSD License
 Apache-2.0
 BSD License
+MIT
 MIT License
-MIT License; Mozilla Public License 2.0 (MPL 2.0)
 Python Software Foundation License
 Zope Public License
