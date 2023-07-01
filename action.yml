@@ -1,0 +1,9 @@
+name: 'DagsHub node license checker'
+description: |
+  When executed at the root of a node module, scans dependencies to check for non permissive licenses. \
+  Assumes the node_modules were already fetched, e.g. using `npm ci --ignore-scripts`
+  You can configure the allowed license list, and output file locations, using environment variables.
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
