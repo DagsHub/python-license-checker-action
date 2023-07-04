@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.10
 
 RUN pip install pip-licenses==4.3.2 pip-licenses pipdeptree
 
