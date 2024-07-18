@@ -13,3 +13,4 @@ MIT License
 Mozilla Public License 2.0 (MPL 2.0)
 Python Software Foundation License
 Zope Public License
+Historical Permission Notice and Disclaimer (HPND)
