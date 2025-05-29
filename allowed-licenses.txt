@@ -9,10 +9,15 @@ BSD License
 BSD 3-Clause
 BSD-3-Clause
 ISC License (ISCL)
+ISC
 MIT
 MIT License
 CMU License (MIT-CMU)
+MIT-CMU
 Mozilla Public License 2.0 (MPL 2.0)
+MPL-2.0
 Python Software Foundation License
+PSF-2.0
 Zope Public License
 Historical Permission Notice and Disclaimer (HPND)
+HPND
