@@ -8,6 +8,7 @@ BSD
 BSD License
 BSD 3-Clause
 BSD-3-Clause
+BSD-2-Clause
 ISC License (ISCL)
 ISC
 MIT
